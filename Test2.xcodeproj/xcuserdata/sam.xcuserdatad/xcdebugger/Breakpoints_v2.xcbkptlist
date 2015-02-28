@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test2/ViewController.swift"
+            timestampString = "446854015.857324"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "calculateTapped(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test2/ViewController.swift"
+            timestampString = "446854015.857324"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "calculateTapped(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test2/RestaurantPickerViewControllerTableViewController.swift"
+            timestampString = "446853634.220458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "selRestaurants"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test2.RestaurantPickerViewControllerTableViewController.selRestaurants.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Swift.Bool&gt;&gt;"
+                  moduleName = "Test2"
+                  urlString = "file:///Users/sam/Desktop/Test2/Test2/RestaurantPickerViewControllerTableViewController.swift"
+                  timestampString = "446853634.224508"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test2.RestaurantPickerViewControllerTableViewController.selRestaurants.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Swift.Bool&gt;&gt;"
+                  moduleName = "Test2"
+                  urlString = "file:///Users/sam/Desktop/Test2/Test2/RestaurantPickerViewControllerTableViewController.swift"
+                  timestampString = "446853634.224703"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test2.RestaurantPickerViewControllerTableViewController.selRestaurants.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Swift.Bool&gt;&gt;"
+                  moduleName = "Test2"
+                  urlString = "file:///Users/sam/Desktop/Test2/Test2/RestaurantPickerViewControllerTableViewController.swift"
+                  timestampString = "446853634.224833"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test2.RestaurantPickerViewControllerTableViewController.init (Test2.RestaurantPickerViewControllerTableViewController.Type)(style : C.UITableViewStyle) -&gt; Test2.RestaurantPickerViewControllerTableViewController"
+                  moduleName = "Test2"
+                  urlString = "file:///Users/sam/Desktop/Test2/Test2/RestaurantPickerViewControllerTableViewController.swift"
+                  timestampString = "446853634.22497"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test2.RestaurantPickerViewControllerTableViewController.init (Test2.RestaurantPickerViewControllerTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Test2.RestaurantPickerViewControllerTableViewController"
+                  moduleName = "Test2"
+                  urlString = "file:///Users/sam/Desktop/Test2/Test2/RestaurantPickerViewControllerTableViewController.swift"
+                  timestampString = "446853634.225138"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test2.RestaurantPickerViewControllerTableViewController.init (Test2.RestaurantPickerViewControllerTableViewController.Type)() -&gt; Test2.RestaurantPickerViewControllerTableViewController"
+                  moduleName = "Test2"
+                  urlString = "file:///Users/sam/Desktop/Test2/Test2/RestaurantPickerViewControllerTableViewController.swift"
+                  timestampString = "446853634.225275"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test2.RestaurantPickerViewControllerTableViewController.init (Test2.RestaurantPickerViewControllerTableViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Test2.RestaurantPickerViewControllerTableViewController"
+                  moduleName = "Test2"
+                  urlString = "file:///Users/sam/Desktop/Test2/Test2/RestaurantPickerViewControllerTableViewController.swift"
+                  timestampString = "446853634.225402"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
