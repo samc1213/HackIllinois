@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import SwiftHTTP
+
+
 
 class ViewController: UIViewController {
-
+    var request = HTTPTask()
     var outside: Bool = false
     var inside: Bool = true
     var dollar = 0
