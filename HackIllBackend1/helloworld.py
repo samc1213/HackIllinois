@@ -118,6 +118,34 @@ class RandomRestaurant(webapp2.RequestHandler):
         name = randominlist['name']
         self.response.write(randominlist)
 
+        randomlat=randominlist['latitude']
+        randomlong=randominlist['longitude']
+        mapslink = 'comgooglemaps://?center='
+        mapslink+=str(randomlat)
+        mapslink+=","
+        mapslink+=str(randomlong)
+        mapslink+="q="
+
+        namenospace = ""
+        for i in range(0, len(name)):
+            if name[i] == " ":
+                namenospace += "+"
+            else:
+                namenospace += name[i]
+
+        mapslink+=namenospace
+        self.response.write("googlemapslink: " + mapslink)
+
+        yelplink = "yelp:///search?term="
+        yelplink += namenospace
+        yelplink+="&cll="
+        yelplink+=str(randomlat)
+        yelplink+=","
+        yelplink+=str(randomlong)
+        self.response.write("yelplink: " + yelplink)
+
+
+
 class RandomOutdoor(webapp2.RequestHandler):
     def get(self):
         self.response.write(OUTDOOR_HTML)
@@ -149,7 +177,7 @@ class RandomOutdoor(webapp2.RequestHandler):
         googlequery+='&key=AIzaSyAT2PcZUhBG0sHmuAB0GLxZz1iUIIcHrlc'
         #self.response.write(googlequery)
         #googleresponse = urlfetch.fetch(url = googlequery, method = urlfetch.GET)
-        #self.response.write('<html><body><img src="' + googlequery + '"></body></html>')
+        self.response.write("streetviewlink: " + googlequery)
 
 class RandomCultural(webapp2.RequestHandler):
     def get(self):
@@ -180,8 +208,10 @@ class RandomCultural(webapp2.RequestHandler):
         googlequery+=","
         googlequery+=str(randomlong)
         googlequery+='&key=AIzaSyAT2PcZUhBG0sHmuAB0GLxZz1iUIIcHrlc'
+        self.response.write("streetviewlink: " + googlequery)
         #self.response.write(googlequery)
         #googleresponse = urlfetch.fetch(url = googlequery, method = urlfetch.GET)
+
 
 application = webapp2.WSGIApplication([
     ('/restaurantdisp', RestaurantDisp),
