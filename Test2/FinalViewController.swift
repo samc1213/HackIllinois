@@ -33,9 +33,11 @@ class FinalViewController: UIViewController {
     var italian: String!
     var seafood: String!
     var thai: String!
+    var gmaps : String!
+    
     
     @IBOutlet var dateButton : UIButton!
-    
+    @IBOutlet var gmapsPicture : UIImageView!
     
     
     @IBOutlet var restaurantLabel : UILabel!
@@ -268,6 +270,12 @@ class FinalViewController: UIViewController {
                     self.address2 = tempadd + tempadd1
                     self.placeaddLabel2.text = (self.address2)
                     
+                    var myGmaps = self.str.componentsSeparatedByString("streetviewlink: ")
+                    self.gmaps = myGmaps[1]
+                    
+                    let url = NSURL(string: self.gmaps)
+                    let data = NSData(contentsOfURL: url!)
+                    self.gmapsPicture.image = UIImage(data:data!)
                     
                     
                     
@@ -373,7 +381,13 @@ class FinalViewController: UIViewController {
                         self.address2 = tempadd + tempadd1
                         self.placeaddLabel2.text = (self.address2)
                         
-                        
+                        var myGmaps = self.str.componentsSeparatedByString("streetviewlink: ")
+                        self.gmaps = myGmaps[1]
+
+                        let url = NSURL(string: self.gmaps)
+                        let data = NSData(contentsOfURL: url!)
+                        self.gmapsPicture.image = UIImage(data:data!)
+
                         
                         
                         
