@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftHTTP
-import JSONJoy
 
 
 
@@ -21,7 +20,15 @@ class FinalViewController: UIViewController {
     var address2 : String!
     var rating : Double!
     
-    @IBOutlet var resultsInformation : UILabel!
+    @IBOutlet var restaurantLabel : UILabel!
+    @IBOutlet var telephoneLabel : UILabel!
+    @IBOutlet var addressLabel : UILabel!
+    @IBOutlet var addressLabel2 : UILabel!
+
+    @IBOutlet var ratingLabel : UILabel!
+
+    
+
     
     override func viewDidLoad() {
         
@@ -35,31 +42,58 @@ class FinalViewController: UIViewController {
                 println("response: \(k)")
                 dispatch_async(dispatch_get_main_queue(), {
                     self.str = k
-                    self.resultsInformation.text = self.str
                     var counter = 0
 
                     var myName = self.str.componentsSeparatedByString("'name': u'")
-                    var myName2 = myName[1].componentsSeparatedByString("'")
-                    self.name = myName2[0]
-                    println("\(self.name)")
+                    if myName[0] == k!
+                    {
+                        myName = self.str.componentsSeparatedByString("'name': u\"")
+                        var myName2 = self.str.componentsSeparatedByString("\"")
+                        self.name = myName2[0]
+
+                    }
+                    else{
+                        var myName2 = myName[1].componentsSeparatedByString("'")
+                        self.name = myName2[0]
+
+                    }
+                    
+                    self.restaurantLabel.text = (self.name)
+                    
                     
                     var myTelephone = self.str.componentsSeparatedByString("tel': u'")
+                    if myTelephone[0] == k!
+                    {
+                        self.telephone = "None"
+                    }
+                    else {
                     var myTelephone2 = myTelephone[1].componentsSeparatedByString("'")
+                    
                     self.telephone = myTelephone2[0]
-                    println("\(self.telephone)")
+                    }
+                    self.telephoneLabel.text = (self.telephone)
 
                     
                     var myRating = self.str.componentsSeparatedByString("u'rating': ")
+                    if myRating[0] == k!{
+                        self.rating = -1
+                    }
+                    else
+                    {
                     var myRating2 = myRating[1].componentsSeparatedByString("'")
+                    
                     self.rating = (myRating2[0] as NSString).doubleValue
                     println("\(self.rating)")
+                    }
+                    
 
                     
                     var myAddress1 = self.str.componentsSeparatedByString("u'address': u'")
                     var myAddress2 = myAddress1[1].componentsSeparatedByString("'")
+    
                     
                     self.address1 = myAddress2[0]
-                    println("\(self.address1)")
+                    self.addressLabel.text = (self.address1)
 
                     
                     var myAddress3 = self.str.componentsSeparatedByString("locality': u'")
@@ -74,7 +108,7 @@ class FinalViewController: UIViewController {
                     var tempadd = myAddress4[0] + tempcom
                     var tempadd1 = tempspace + myAddress6[0] + tempspace + myAddress8[0]
                     self.address2 = tempadd + tempadd1
-                    println("\(self.address2)")
+                    self.addressLabel2.text = (self.address2)
 
 
                     
