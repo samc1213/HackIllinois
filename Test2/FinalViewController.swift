@@ -8,10 +8,12 @@
 
 import UIKit
 import SwiftHTTP
+import Foundation
+import CoreLocation
 
 
 
-class FinalViewController: UIViewController {
+class FinalViewController: UIViewController, CLLocationManagerDelegate {
     var tempstring: String!
     var str : String!
     var name : String!
@@ -19,6 +21,13 @@ class FinalViewController: UIViewController {
     var address1 : String!
     var address2 : String!
     var rating : Double!
+    var chinese: String!
+    var american: String!
+    var diner: String!
+    var italian: String!
+    var seafood: String!
+    var thai: String!
+
     
     @IBOutlet var restaurantLabel : UILabel!
     @IBOutlet var telephoneLabel : UILabel!
@@ -28,13 +37,22 @@ class FinalViewController: UIViewController {
     @IBOutlet var ratingLabel : UILabel!
 
     
-
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        chinese = restaurant_returns[0]
+        american = restaurant_returns[1]
+        diner = restaurant_returns[2]
+        italian = restaurant_returns[3]
+        seafood = restaurant_returns[4]
+        thai = restaurant_returns[5]
+    
+        
+        
+        
+        
         var request = HTTPTask();
-        let params: Dictionary<String, AnyObject> = ["lat": 34.1024, "long": -118.41835]
+        let params: Dictionary<String, AnyObject> = ["lat": 34.1024, "long": -118.41835, "chinese": chinese, "american": american, "italian": italian, "seafood": seafood, "thai": thai, "price": moneymoney]
         request.POST("http://diesel-ability-87008.appspot.com/submitrestaurant", parameters: params, success:{(response: HTTPResponse) in
             
             if let data = response.responseObject as? NSData {
@@ -141,14 +159,50 @@ class FinalViewController: UIViewController {
     }
     
     
-       /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
+//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+//        func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+//            
+//            
+//            
+//            CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
+//
+//                if (error != nil) {
+//                    println("Error:" + error.localizedDescription)
+//                    return
+//                }
+//                if placemarks.count > 0 {
+//                    let pm = placemarks[0] as CLPlacemark
+//                    self.displayLocationInfo(pm)
+//                }else {
+//                    println("Error with data")
+//                }
+//            })
+//        }
+//    }
+//    
+//    func displayLocationInfo(placemar: CLPlacemark) {
+//        self.locationManager.stopUpdatingLocation()
+//        println(placemark.locality)
+//        println(placemark.postalCode)
+//        println(placemark.country)
+//    }
+//    
+//    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+//        println("Error: " + error.localizedDescription)
+//    }
+//    
+//    
+//       /*
+//    // MARK: - Navigation
+//
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        // Pass the selected object to the new view controller.
+//    }
+//    */
 
 }

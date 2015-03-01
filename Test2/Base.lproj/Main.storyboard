@@ -51,7 +51,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ecg-oA-Ine" kind="custom" id="7pd-yT-53n"/>
+                                    <segue destination="ecg-oA-Ine" kind="custom" id="WPh-CH-vgB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-540.26666666666665" y="-66.266666666666666"/>
+            <point key="canvasLocation" x="-381" y="361"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IQ5-5r-tGx">
