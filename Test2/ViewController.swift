@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import SwiftHTTP
+
+
 
 class ViewController: UIViewController {
-
-    var outside: Bool = false
-    var inside: Bool = true
+//    
+//    var outside: Bool = false
+//    var inside: Bool = true
     var dollar = 0
+    var tempstring: String!
     var monetary_amount = 0
     var restaurant_types:[Bool] = [true, true, true, true, true, true, true, true, true]
     var check = false
@@ -29,6 +33,8 @@ class ViewController: UIViewController {
     @IBOutlet var moneySlider : UISlider!
     @IBOutlet var maxMoney : UILabel!
     @IBOutlet var resultsTextView : UILabel!
+    @IBOutlet var resultsInformation : UILabel!
+
 
     @IBAction func canceltoRestaurants(segue:UIStoryboardSegue) {
         
@@ -45,18 +51,16 @@ class ViewController: UIViewController {
         check = true
     }
     
-    @IBAction func outside_clicked(sender : AnyObject) {
-        (sender as UIButton).backgroundColor = UIColor.brownColor()
-        outside = true
-    }
-    @IBAction func inside_clicked(sender : AnyObject) {
-        (sender as UIButton).backgroundColor = UIColor.brownColor()
-        inside = true
-    }
+//    @IBAction func outside_clicked(sender : AnyObject) {
+//        (sender as UIButton).backgroundColor = UIColor.brownColor()
+//        outside = true
+//    }
+//    @IBAction func inside_clicked(sender : AnyObject) {
+//        (sender as UIButton).backgroundColor = UIColor.brownColor()
+//        inside = true
+//    }
     
-    @IBAction func dinner_clicked(sender : AnyObject) {
     
-    }
     
     @IBAction func sliderValueChanged(sender: UISlider) {
         var currentValue = Int(sender.value)
@@ -69,9 +73,10 @@ class ViewController: UIViewController {
         
         for var index = 0; index < (restaurants.count); ++index{
             if restaurant_types[index]==true{
-                results += restaurants[index]
+                results += restaurants[index] + " "
             }
         }
+        
 
         resultsTextView.text = results
     }
@@ -83,7 +88,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		221578D71AA2142500B748A6 /* RestaurantPickerViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221578D61AA2142500B748A6 /* RestaurantPickerViewControllerTableViewController.swift */; };
+		2282AC511AA28FBD002450CB /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282AC501AA28FBD002450CB /* FinalViewController.swift */; };
+		22B00A251AA3414D00115B98 /* Step1Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B00A241AA3414D00115B98 /* Step1Page.swift */; };
+		22B00A2B1AA342AA00115B98 /* Step2Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B00A2A1AA342AA00115B98 /* Step2Page.swift */; };
+		22B00A2D1AA3435700115B98 /* Step3Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B00A2C1AA3435700115B98 /* Step3Page.swift */; };
+		22B00A301AA347C200115B98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B00A2F1AA347C200115B98 /* CoreLocation.framework */; };
+		70850CC31AA307D9006D3B2B /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70850CBC1AA30797006D3B2B /* SwiftHTTP.framework */; };
+		70850CC51AA307EE006D3B2B /* SwiftHTTP.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 70850CBC1AA30797006D3B2B /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70850CC81AA3093E006D3B2B /* DinnerDateColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 70850CC61AA3093E006D3B2B /* DinnerDateColor.png */; };
+		70850CC91AA3093E006D3B2B /* DinnerDateWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 70850CC71AA3093E006D3B2B /* DinnerDateWhite.png */; };
+		70850CCB1AA30F46006D3B2B /* Dense-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70850CCA1AA30F46006D3B2B /* Dense-Regular.otf */; };
 		C1ECF8291AA1F1DA00E127D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECF8281AA1F1DA00E127D9 /* AppDelegate.swift */; };
 		C1ECF82B1AA1F1DA00E127D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECF82A1AA1F1DA00E127D9 /* ViewController.swift */; };
 		C1ECF82E1AA1F1DA00E127D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1ECF82C1AA1F1DA00E127D9 /* Main.storyboard */; };
@@ -17,6 +27,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		70850CBB1AA30797006D3B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70850CB41AA30797006D3B2B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD901619C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
+		70850CBD1AA30797006D3B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70850CB41AA30797006D3B2B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD902119C8D8B500DD99B6;
+			remoteInfo = SwiftHTTPTests;
+		};
+		70850CBF1AA30797006D3B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70850CB41AA30797006D3B2B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958025919E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSX;
+		};
+		70850CC11AA30797006D3B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70850CB41AA30797006D3B2B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958026319E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSXTests;
+		};
 		C1ECF8391AA1F1DB00E127D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C1ECF81B1AA1F1DA00E127D9 /* Project object */;
@@ -26,8 +64,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2282AC4C1AA2809B002450CB /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Copy Frameworks";
+			dstSubfolderSpec = 10;
+			files = (
+				70850CC51AA307EE006D3B2B /* SwiftHTTP.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70850CC41AA307E6006D3B2B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		221578D61AA2142500B748A6 /* RestaurantPickerViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantPickerViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		2282AC501AA28FBD002450CB /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		22B00A241AA3414D00115B98 /* Step1Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step1Page.swift; sourceTree = "<group>"; };
+		22B00A2A1AA342AA00115B98 /* Step2Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step2Page.swift; sourceTree = "<group>"; };
+		22B00A2C1AA3435700115B98 /* Step3Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step3Page.swift; sourceTree = "<group>"; };
+		22B00A2F1AA347C200115B98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		70850CB41AA30797006D3B2B /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = "SwiftHTTP-master/SwiftHTTP.xcodeproj"; sourceTree = "<group>"; };
+		70850CC61AA3093E006D3B2B /* DinnerDateColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DinnerDateColor.png; sourceTree = "<group>"; };
+		70850CC71AA3093E006D3B2B /* DinnerDateWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DinnerDateWhite.png; sourceTree = "<group>"; };
+		70850CCA1AA30F46006D3B2B /* Dense-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dense-Regular.otf"; sourceTree = "<group>"; };
 		C1ECF8231AA1F1DA00E127D9 /* Test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1ECF8271AA1F1DA00E127D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1ECF8281AA1F1DA00E127D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B00A301AA347C200115B98 /* CoreLocation.framework in Frameworks */,
+				70850CC31AA307D9006D3B2B /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +130,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70850CB51AA30797006D3B2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70850CBC1AA30797006D3B2B /* SwiftHTTP.framework */,
+				70850CBE1AA30797006D3B2B /* SwiftHTTPTests.xctest */,
+				70850CC01AA30797006D3B2B /* SwiftHTTP.framework */,
+				70850CC21AA30797006D3B2B /* SwiftHTTPOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C1ECF81A1AA1F1DA00E127D9 = {
 			isa = PBXGroup;
 			children = (
+				22B00A2F1AA347C200115B98 /* CoreLocation.framework */,
+				70850CB41AA30797006D3B2B /* SwiftHTTP.xcodeproj */,
 				C1ECF8251AA1F1DA00E127D9 /* Test2 */,
 				C1ECF83B1AA1F1DB00E127D9 /* Test2Tests */,
 				C1ECF8241AA1F1DA00E127D9 /* Products */,
@@ -81,8 +166,12 @@
 			children = (
 				221578D61AA2142500B748A6 /* RestaurantPickerViewControllerTableViewController.swift */,
 				C1ECF8281AA1F1DA00E127D9 /* AppDelegate.swift */,
+				22B00A241AA3414D00115B98 /* Step1Page.swift */,
+				22B00A2A1AA342AA00115B98 /* Step2Page.swift */,
+				22B00A2C1AA3435700115B98 /* Step3Page.swift */,
 				C1ECF82A1AA1F1DA00E127D9 /* ViewController.swift */,
 				C1ECF82C1AA1F1DA00E127D9 /* Main.storyboard */,
+				2282AC501AA28FBD002450CB /* FinalViewController.swift */,
 				C1ECF82F1AA1F1DA00E127D9 /* Images.xcassets */,
 				C1ECF8311AA1F1DA00E127D9 /* LaunchScreen.xib */,
 				C1ECF8261AA1F1DA00E127D9 /* Supporting Files */,
@@ -93,6 +182,9 @@
 		C1ECF8261AA1F1DA00E127D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70850CCA1AA30F46006D3B2B /* Dense-Regular.otf */,
+				70850CC61AA3093E006D3B2B /* DinnerDateColor.png */,
+				70850CC71AA3093E006D3B2B /* DinnerDateWhite.png */,
 				C1ECF8271AA1F1DA00E127D9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -125,6 +217,8 @@
 				C1ECF81F1AA1F1DA00E127D9 /* Sources */,
 				C1ECF8201AA1F1DA00E127D9 /* Frameworks */,
 				C1ECF8211AA1F1DA00E127D9 /* Resources */,
+				2282AC4C1AA2809B002450CB /* Copy Files */,
+				70850CC41AA307E6006D3B2B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -182,6 +276,12 @@
 			mainGroup = C1ECF81A1AA1F1DA00E127D9;
 			productRefGroup = C1ECF8241AA1F1DA00E127D9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 70850CB51AA30797006D3B2B /* Products */;
+					ProjectRef = 70850CB41AA30797006D3B2B /* SwiftHTTP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C1ECF8221AA1F1DA00E127D9 /* Test2 */,
@@ -190,6 +290,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		70850CBC1AA30797006D3B2B /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 70850CBB1AA30797006D3B2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70850CBE1AA30797006D3B2B /* SwiftHTTPTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPTests.xctest;
+			remoteRef = 70850CBD1AA30797006D3B2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70850CC01AA30797006D3B2B /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 70850CBF1AA30797006D3B2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70850CC21AA30797006D3B2B /* SwiftHTTPOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPOSXTests.xctest;
+			remoteRef = 70850CC11AA30797006D3B2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		C1ECF8211AA1F1DA00E127D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -197,7 +328,10 @@
 			files = (
 				C1ECF82E1AA1F1DA00E127D9 /* Main.storyboard in Resources */,
 				C1ECF8331AA1F1DA00E127D9 /* LaunchScreen.xib in Resources */,
+				70850CCB1AA30F46006D3B2B /* Dense-Regular.otf in Resources */,
 				C1ECF8301AA1F1DA00E127D9 /* Images.xcassets in Resources */,
+				70850CC91AA3093E006D3B2B /* DinnerDateWhite.png in Resources */,
+				70850CC81AA3093E006D3B2B /* DinnerDateColor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B00A2D1AA3435700115B98 /* Step3Page.swift in Sources */,
 				C1ECF82B1AA1F1DA00E127D9 /* ViewController.swift in Sources */,
+				2282AC511AA28FBD002450CB /* FinalViewController.swift in Sources */,
 				C1ECF8291AA1F1DA00E127D9 /* AppDelegate.swift in Sources */,
+				22B00A2B1AA342AA00115B98 /* Step2Page.swift in Sources */,
 				221578D71AA2142500B748A6 /* RestaurantPickerViewControllerTableViewController.swift in Sources */,
+				22B00A251AA3414D00115B98 /* Step1Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

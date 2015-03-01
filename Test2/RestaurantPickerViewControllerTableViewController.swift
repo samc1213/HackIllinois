@@ -25,15 +25,13 @@ class RestaurantPickerViewControllerTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        restaurants = ["Asian",
-            "American",
+        restaurants = ["American",
+            "Chinese",
             "Diner",
-            "Fast Food",
-            "Gourmet",
-            "Mexican",
-            "Mediterranian",
-            "TexMex",
-            "Chicken"]
+            "Italian",
+            "Seafood",
+            "Thai"]
+
     }
     
     override func didReceiveMemoryWarning() {
