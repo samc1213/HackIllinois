@@ -13,11 +13,11 @@ var inside: Bool = false
 class Step1_Page: UIViewController {
     
     @IBAction func outside_clicked(sender : AnyObject) {
-        (sender as UIButton).backgroundColor = UIColor.greenColor()
+        (sender as UIButton).backgroundColor = UIColor.blackColor()
         outside = true
     }
     @IBAction func inside_clicked(sender : AnyObject) {
-        (sender as UIButton).backgroundColor = UIColor.greenColor()
+        (sender as UIButton).backgroundColor = UIColor.blackColor()
         inside = true
     }
 

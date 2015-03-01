@@ -82,7 +82,7 @@ class FinalViewController: UIViewController {
                     if myName[0] == k!
                     {
                         myName = self.str.componentsSeparatedByString("'name': u\"")
-                        var myName2 = self.str.componentsSeparatedByString("\"")
+                        var myName2 = myName[1].componentsSeparatedByString("\"")
                         self.name = myName2[0]
 
                     }
@@ -203,7 +203,7 @@ class FinalViewController: UIViewController {
                     if myName[0] == k!
                     {
                         myName = self.str.componentsSeparatedByString("'name': u\"")
-                        var myName2 = self.str.componentsSeparatedByString("\"")
+                        var myName2 = myName[1].componentsSeparatedByString("\"")
                         self.name = myName2[0]
                         
                     }
@@ -312,7 +312,7 @@ class FinalViewController: UIViewController {
                         if myName[0] == k!
                         {
                             myName = self.str.componentsSeparatedByString("'name': u\"")
-                            var myName2 = self.str.componentsSeparatedByString("\"")
+                            var myName2 = myName[1].componentsSeparatedByString("\"")
                             self.name = myName2[0]
                             
                         }

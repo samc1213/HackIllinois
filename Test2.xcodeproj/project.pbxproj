@@ -98,7 +98,7 @@
 		70850CC61AA3093E006D3B2B /* DinnerDateColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DinnerDateColor.png; sourceTree = "<group>"; };
 		70850CC71AA3093E006D3B2B /* DinnerDateWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DinnerDateWhite.png; sourceTree = "<group>"; };
 		70850CCA1AA30F46006D3B2B /* Dense-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dense-Regular.otf"; sourceTree = "<group>"; };
-		C1ECF8231AA1F1DA00E127D9 /* Test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1ECF8231AA1F1DA00E127D9 /* Dinner + Date.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dinner + Date.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1ECF8271AA1F1DA00E127D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1ECF8281AA1F1DA00E127D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1ECF82A1AA1F1DA00E127D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		C1ECF8241AA1F1DA00E127D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1ECF8231AA1F1DA00E127D9 /* Test2.app */,
+				C1ECF8231AA1F1DA00E127D9 /* Dinner + Date.app */,
 				C1ECF8381AA1F1DB00E127D9 /* Test2Tests.xctest */,
 			);
 			name = Products;
@@ -226,7 +226,7 @@
 			);
 			name = Test2;
 			productName = Test2;
-			productReference = C1ECF8231AA1F1DA00E127D9 /* Test2.app */;
+			productReference = C1ECF8231AA1F1DA00E127D9 /* Dinner + Date.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C1ECF8371AA1F1DB00E127D9 /* Test2Tests */ = {
@@ -482,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dinner + Date";
 			};
 			name = Debug;
 		};
@@ -492,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dinner + Date";
 			};
 			name = Release;
 		};
