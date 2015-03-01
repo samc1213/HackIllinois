@@ -114,10 +114,10 @@ class FinalViewController: UIViewController {
                     }
                     else
                     {
-                    var myRating2 = myRating[1].componentsSeparatedByString("u'")
+                    var myRating2 = myRating[1].componentsSeparatedByString(", u'")
                     
                     self.rating = myRating2[0]
-                    self.ratingLabel.text = (self.rating)
+                    self.ratingLabel.text = (self.rating + "/5")
                     }
                     
 
