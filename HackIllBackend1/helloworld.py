@@ -167,13 +167,26 @@ class RandomOutdoor(webapp2.RequestHandler):
         data = responsedict['data']
         index = random.randint(0, len(data)-1)
         randominlist = data[index]
+        name = randominlist['name']
+        postcode = randominlist['postcode']
         self.response.write(randominlist)
+
+        namenospace = ""
+        for i in range(0, len(name)):
+            if name[i] == " ":
+                namenospace += "+"
+            else:
+                namenospace += name[i]
+
         randomlat=randominlist['latitude']
         randomlong=randominlist['longitude']
         googlequery='https://maps.googleapis.com/maps/api/streetview?size=400x400&location='
-        googlequery+=str(randomlat)
-        googlequery+=","
-        googlequery+=str(randomlong)
+        # googlequery+=str(randomlat)
+        # googlequery+=","
+        # googlequery+=str(randomlong)
+        googlequery+=namenospace
+
+        googlequery+="+" + str(postcode)
         googlequery+='&key=AIzaSyAT2PcZUhBG0sHmuAB0GLxZz1iUIIcHrlc'
         #self.response.write(googlequery)
         #googleresponse = urlfetch.fetch(url = googlequery, method = urlfetch.GET)
